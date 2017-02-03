@@ -112,7 +112,7 @@ Original Image             |  Final Output Image
 
 # Video Pipeline
 
-The images from the video were passed via the pipeline described above. As a result, it was not that smooth. So, to counter that only first image was used to get lane lines using sliding window technique. In the subsequent images, we search for lane lines within a margin of 100 pixels. This way the calculation speeds up and the transition from one image to another is relatively smoother.
+The images from the video were passed via the pipeline described above. As a result, it was not that smooth. So, to counter that only first image was used to get lane lines using sliding window technique. In the subsequent images, we search for lane lines within a margin of 100 pixels. This way the calculation speeds up and the transition from one image to another is relatively smoother. **project_video_result.mp4** is the output result for the given project_video.
 
 [Video Link](https://www.youtube.com/watch?v=K4IfIrn7tIM)
 
