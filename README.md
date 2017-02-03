@@ -36,7 +36,7 @@ The camera calibration matrix and distortion coefficients obtained from above ar
 
 Original Image             |  Undistorted Image
 :-------------------------:|:-------------------------:
-![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/undistorted_images/test2/original.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/undistorted_images/test2/undist.jpg)
+![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/undistorted_images/straight_lines1/original.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/undistorted_images/straight_lines1/undist.jpg)
 
 If you observe closely, the edges of the image are a bit different so, the distortion effects have been removed.
 
@@ -47,5 +47,5 @@ Perspective transform is applied on the undistorted from above step. This code i
 
 Original Image             |  Bird's eye view of Image
 :-------------------------:|:-------------------------:
-![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/birds_eye_view_images/test2/original.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/birds_eye_view_images/test2/birds_eye.jpg)
+![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/birds_eye_view_images/straight_lines1/original.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/birds_eye_view_images/straight_lines1/birds_eye.jpg)
 
