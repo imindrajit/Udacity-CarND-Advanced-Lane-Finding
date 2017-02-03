@@ -108,3 +108,12 @@ Project the polygon image from above step on the original image. The code is ava
 Original Image             |  Final Output Image
 :-------------------------:|:-------------------------:
 ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/undistorted_images/straight_lines1/original.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/final_images/straight_lines1/final_image.jpg)
+
+
+# Video Pipeline
+
+The images from the video were passed via the pipeline described above. As a result, it was not that smooth. So, to counter that only first image was used to get lane lines using sliding window technique. In the subsequent images, we search for lane lines within a margin of 100 pixels. This way the calculation speeds up and the transition from one image to another is relatively smoother.
+
+Input Video                |  Output Video
+:-------------------------:|:-------------------------:
+![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/project_video.mp4)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/project_video_result.mp4)
