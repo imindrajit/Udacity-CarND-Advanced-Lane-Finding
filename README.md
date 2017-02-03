@@ -34,6 +34,6 @@ OpenCV functions *findChessboardCorners()* and *drawChessboardCorners()* have be
 
 The camera calibration matrix and distortion coefficients obtained from above are used for undistorting the images. This code is present in cell no. 9 of advanced_lane_finding.ipynb.
 
-Original Image             |  Undistorted Image
-:-------------------------:|:-------------------------:
+Original Image              Undistorted Image
+-------------------------|-------------------------
 ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/undistorted_images/test1/original.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/undistorted_images/straight_lines1/undist.jpg)
