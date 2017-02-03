@@ -103,7 +103,7 @@ Lane Lines                 |  Polygon
 
 # Steps 6 and 7 ( Project polygon on original image )
 
-Project the polygon image from above step on the original image. The code is available in **cell no. - 11**. Also, radius of curvature and position of the car in the image is obtained using **cell no. - 13**. This code is the same as that given in udacity lectures. Radiud of curvature and position of the car are embedded into the image using *cv2.putText()* function. This piece of code is in **cell no. - 15**.
+Project the polygon image from above step on the original image. The code is available in **cell no. - 11**. Also, radius of curvature and position of the car in the image is obtained using **cell no. - 13**. This code is the same as that given in udacity lectures. Radius of curvature and position of the car are embedded into the image using *cv2.putText()* function. This piece of code is in **cell no. - 15**.
 
 Original Image             |  Final Output Image
 :-------------------------:|:-------------------------:
