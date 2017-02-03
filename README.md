@@ -36,4 +36,16 @@ The camera calibration matrix and distortion coefficients obtained from above ar
 
 Original Image             |  Undistorted Image
 :-------------------------:|:-------------------------:
-![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/undistorted_images/test1/original.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/undistorted_images/straight_lines1/undist.jpg)
+![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/undistorted_images/test1/original.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/undistorted_images/test1/undist.jpg)
+
+If you observe closely, the edges of the image are a bit different so, the distortion effects have been removed.
+
+
+# Step 2 ( Bird's Eye View )
+
+Perspective transform is applied on the undistorted from above step. This code is present in cell no. 10 of advanced_lane_finding.ipynb. In normal view the lanes can be seen as converging together but to get the exact lanes for the car to drive we need parallel structure of the lines. For this purpose it is important we do perspective transform. This also helps in only focussing on the lane part of the image. 4 source points from the original image are picked and also 4 destination points, which form a rectangle, are selected. *cv2.getPerspectiveTransform()* is used to get the transformation matrix. *cv2.warpPerspective()* is used to get the warped image.
+
+Original Image             |  Bird's eye view of Image
+:-------------------------:|:-------------------------:
+![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/birds_eye_view_images/test1/original.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/birds_eye_view_images/test1/birds_eye.jpg)
+
