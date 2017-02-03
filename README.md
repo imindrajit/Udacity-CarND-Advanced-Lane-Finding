@@ -27,7 +27,7 @@ The steps via which an image goes through :-
 
 # Camera Calibration
 
-OpenCV functions *findChessboardCorners()* and *drawChessboardCorners()* have been used to calibrate the camera using chessboard images provided by udacity. The distortion coefficients and camera calibration matrix obtained here are used in the pipeline for undistorting images. Code can be found in **cell no. 4** of advanced_lane_finding.ipynb.
+OpenCV functions *findChessboardCorners()* and *drawChessboardCorners()* have been used to calibrate the camera using chessboard images provided by udacity. The distortion coefficients and camera calibration matrix obtained here are used in the pipeline for undistorting images. Code can be found in **cell no. - 4** of advanced_lane_finding.ipynb.
 
 
 # Step 1 ( Undistort Images )
@@ -43,7 +43,7 @@ If you observe closely, the edges of the image are a bit different so, the disto
 
 # Step 2 ( Bird's Eye View )
 
-Perspective transform is applied on the undistorted from above step. This code is present in **cell no. 10** of advanced_lane_finding.ipynb. In normal view the lanes can be seen as converging together but to get the exact lanes for the car to drive we need parallel structure of the lines. For this purpose it is important we do perspective transform. This also helps in only focussing on the lane part of the image. 4 source points from the original image are picked and also 4 destination points, which form a rectangle, are selected. *cv2.getPerspectiveTransform()* is used to get the transformation matrix. *cv2.warpPerspective()* is used to get the warped image.
+Perspective transform is applied on the undistorted from above step. This code is present in **cell no. - 10** of advanced_lane_finding.ipynb. In normal view the lanes can be seen as converging together but to get the exact lanes for the car to drive we need parallel structure of the lines. For this purpose it is important we do perspective transform. This also helps in only focussing on the lane part of the image. 4 source points from the original image are picked and also 4 destination points, which form a rectangle, are selected. *cv2.getPerspectiveTransform()* is used to get the transformation matrix. *cv2.warpPerspective()* is used to get the warped image.
 
 Original Image             |  Bird's eye view of Image
 :-------------------------:|:-------------------------:
@@ -52,7 +52,7 @@ Original Image             |  Bird's eye view of Image
 
 # Step 3 ( Apply Color Thresholds )
 
-Color thresoholding is applied on the bird's eye view image from above. This is done so that we can filter out only the lanes which are of interest to us, both yellow and white lane lines. The code can be found in **cell no. 12** of advanced_lane_finding.ipynb. We will aplly two different thresholdings for yellow and white color.
+Color thresoholding is applied on the bird's eye view image from above. This is done so that we can filter out only the lanes which are of interest to us, both yellow and white lane lines. The code can be found in **cell no. - 12** of advanced_lane_finding.ipynb. We will aplly two different thresholdings for yellow and white color.
 
  i) ***Red Color Channel of RGB*** - We use *cv2.threshold()* and min_thresh = 220 and max_thresh = 255. Red channel does a great job of identifying the lane lines.
  
@@ -83,3 +83,10 @@ Bird's Eye Image           |  Combined Color Threshold
 ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/red_channel_thresh_images/straight_lines1/original.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/combined_color_thresh_images/straight_lines1/combined_color.jpg) 
 
 
+# Step 4 ( Draw Left and Right Lines )
+
+The binary warped image from the above step is fed into this function present at **cell no. - 13** of advanced_lane_finding.ipynb. Histogram peaks of the lower half of the image is used for the finding the lane starting points. Also, all non zero points are found from the image. Then, sliding window technique is used for finding the lane line points. We used a window size of 20 and minimum 50 pixels should be present in the window so that it qualifies as a point for the proposed lane line. *np.polyfit()* is used to get the coefficients of the 2-dimensional curve which represents the line.
+
+Binary Warped Images       |  Lane Lines               
+:-------------------------:|:-------------------------:
+![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/combined_color_thresh_images/straight_lines1/combined_color.jpg) |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/lines_test_images/straight_lines1/combined_lines.jpg)
