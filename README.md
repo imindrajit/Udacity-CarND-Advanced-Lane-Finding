@@ -114,6 +114,13 @@ Original Image             |  Final Output Image
 
 The images from the video were passed via the pipeline described above. As a result, it was not that smooth. So, to counter that only first image was used to get lane lines using sliding window technique. In the subsequent images, we search for lane lines within a margin of 100 pixels. This way the calculation speeds up and the transition from one image to another is relatively smoother.
 
-Input Video                |  Output Video
-:-------------------------:|:-------------------------:
-![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/project_video.mp4)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/project_video_result.mp4)
+[Video Link](https://www.youtube.com/watch?v=K4IfIrn7tIM)
+
+
+# Scope for improvement
+
+1) Source and Destination points for Perspective Transform are hardcoded. Some proper technique needs to be used.
+
+2) Some thresholding techniques like Sobel filters were not used but they need to be used to build a better image processing pipeline.
+
+3) This pipeline does not perform well on the challenge videos. So, the need is to build a more robust pipeline.
