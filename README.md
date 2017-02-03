@@ -85,8 +85,17 @@ Bird's Eye Image           |  Combined Color Threshold
 
 # Step 4 ( Draw Left and Right Lines )
 
-The binary warped image from the above step is fed into this function present at **cell no. - 13** of advanced_lane_finding.ipynb. Histogram peaks of the lower half of the image is used for the finding the lane starting points. Also, all non zero points are found from the image. Then, sliding window technique is used for finding the lane line points. We used a window size of 20 and minimum 50 pixels should be present in the window so that it qualifies as a point for the proposed lane line. *np.polyfit()* is used to get the coefficients of the 2-dimensional curve which represents the line.
+The binary warped image from the above step is fed into this function present in **cell no. - 13** of advanced_lane_finding.ipynb. Histogram peaks of the lower half of the image is used for the finding the lane starting points. Also, all non zero points are found from the image. Then, sliding window technique is used for finding the lane line points. We used a window size of 20 and minimum 50 pixels should be present in the window so that it qualifies as a point for the proposed lane line. *cv2.polyfit()* is used to get the coefficients of the 2-dimensional curve which represents the line.
 
 Binary Warped Images       |  Lane Lines               
 :-------------------------:|:-------------------------:
 ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/combined_color_thresh_images/straight_lines1/combined_color.jpg) |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/lines_test_images/straight_lines1/combined_lines.jpg)
+
+
+# Step 5 ( Draw Polygon between the lane lines )
+
+*cv2.fillPoly()* function is used to draw the polygon area in between the two lane line curves. This function is present in **cell no. - 13** of advanced_lane_finding.ipynb.
+
+Lane Lines                 |  Polygon               
+:-------------------------:|:-------------------------:
+![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/lines_test_images/straight_lines1/combined_lines.jpg) |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/polygon_test_images/straight_lines1/polygon_image.jpg)
