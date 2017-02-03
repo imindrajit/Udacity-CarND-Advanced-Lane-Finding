@@ -78,4 +78,8 @@ Yellow HSV Thresh          |  White RGB Thresh
 :-------------------------:|:-------------------------:
 ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/white_hsv_thresh_images/straight_lines1/white_hsv.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/white_hls_thresh_images/straight_lines1/white_hls.jpg)  
 
+Bird's Eye Image           |  Combined Color Threshold               
+:-------------------------:|:-------------------------:
+![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/red_channel_thresh_images/straight_lines1/original.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/combined_color_thresh_images/straight_lines1/combined_color.jpg) 
+
 
