@@ -66,13 +66,16 @@ Color thresoholding is applied on the bird's eye view image from above. This is 
  
  ***Combined Threshold*** - We use OR condition with all the above thresholding techniques and obtain the final binary image.
  
- Bird's Eye Image          |  Red Thresh               |   Yellow HSV
-:-------------------------:|:-------------------------:|:
-![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/red_channel_thresh_images/straight_lines1/original.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/red_channel_thresh_images/straight_lines1/red_thresh.jpg) | 
-![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/yellow_hsv_thresh_images/straight_lines1/yellow_hsv.jpg)
+ Bird's Eye Image          |  Red Thresh               
+:-------------------------:|:-------------------------:
+![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/red_channel_thresh_images/straight_lines1/original.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/red_channel_thresh_images/straight_lines1/red_thresh.jpg) 
+
+Yellow HSV Thresh          |  White RGB Thresh               
+:-------------------------:|:-------------------------:
+![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/yellow_hsv_thresh_images/straight_lines1/yellow_hsv.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/white_normal_thresh_images/straight_lines1/white_hls.jpg) 
 
  White HSV Thresh          |  White HLS Thresh
 :-------------------------:|:-------------------------:
-![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/white_hsv_thresh_images/straight_lines1/white_hsv.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/white_hls_thresh_images/straight_lines1/white_hls.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/white_normal_thresh_images/straight_lines1/white_hls.jpg)
+![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/white_hsv_thresh_images/straight_lines1/white_hsv.jpg)  |  ![](https://github.com/imindrajit/Udacity-CarND-Advanced-Lane-Finding/blob/master/output_images/white_hls_thresh_images/straight_lines1/white_hls.jpg)  
 
 
