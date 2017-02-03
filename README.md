@@ -6,7 +6,7 @@ This project is part of Udacity's Self-Driven Car Nanodegree Program. The aim is
 
 # Pipeline
 
-Calibration matrix and distortion coefficients are calculated using calibration images provided by udacity. *cv2.findChessboardCorners()* and *cv2.calibrateCamera()* functions have been used for this purpose. 
+Calibration matrix and distortion coefficients are calculated using calibration images provided by udacity. 
 
 The steps via which an image goes through :-
 
@@ -23,3 +23,6 @@ The steps via which an image goes through :-
 6) The detected polygon boundary is warped on the input image.
 
 7) Lane boundaries, Radius of curvature and position of the car with respect to center are displayed on the original image.
+
+
+# Camera Calibration
