@@ -52,7 +52,7 @@ Original Image             |  Bird's eye view of Image
 
 # Step 3 ( Apply Color Thresholds )
 
-Color thresoholding is applied on the bird's eye view image from above. This is done so that we can filter out only the lanes which are of interest to us, both yellow and white lane lines. The code can be found in **cell no. - 12** of advanced_lane_finding.ipynb. We will aplly two different thresholdings for yellow and white color.
+Color thresoholding is applied on the bird's eye view image from above. This is done so that we can filter out only the lanes which are of interest to us, both yellow and white lane lines. The code can be found in **cell no. - 12** of advanced_lane_finding.ipynb. We will apply two different thresholdings for yellow and white color.
 
  i) ***Red Color Channel of RGB*** - We use *cv2.threshold()* and min_thresh = 220 and max_thresh = 255. Red channel does a great job of identifying the lane lines.
  
