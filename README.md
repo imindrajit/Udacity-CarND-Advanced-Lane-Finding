@@ -26,3 +26,5 @@ The steps via which an image goes through :-
 
 
 # Camera Calibration
+
+OpenCV functions *findChessboardCorners()* and *drawChessboardCorners()* have been used to calibrate the camera using chessboard images provided by udacity. The distortion coefficients and camera calibration matrix obtained here are used in the pipeline for undistorting images.
